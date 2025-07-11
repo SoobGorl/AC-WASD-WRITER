@@ -6,8 +6,6 @@ key_delay = 0.2
 letter_delay = 0.5
 # time between letters
 
-#testssesssdd
-
 def up():
     time.sleep(key_delay)
     pyautogui.press("w")
