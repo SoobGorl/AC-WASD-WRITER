@@ -1,5 +1,6 @@
 import time
 import pyautogui
+from letters import *
 key_delay = 0.2
 # time between stick presses
 letter_delay = 0.5
@@ -8,79 +9,58 @@ letter_delay = 0.5
 def up():
     time.sleep(key_delay)
     pyautogui.press("w")
-    print("W PRESS (UP)")
-    # ADD 1 TO "UP_NUMBER" increment it by 1, for math stuff in the future
+    print("W PRESS (1 / UP)")
 def left():
     time.sleep(key_delay)
     pyautogui.press("a")
-    print("A PRESS (LEFT)")
+    print("A PRESS (3 / LEFT)")
 def down():
     time.sleep(key_delay)
     pyautogui.press("s")
-    print("S PRESS (DOWN)")
+    print("S PRESS (2 / DOWN)")
 def right():
     time.sleep(key_delay)
     pyautogui.press("d")
-    print("D PRESS (RIGHT)")
+    print("D PRESS (4 / RIGHT)")
 def select():
     time.sleep(key_delay)
     pyautogui.press("e")
     print("SELECTING " + letter_changer[0] + " (A PRESS)")
     time.sleep(letter_delay)
 
-letter_changer = ["NULL"]
-def print_new_letter():
-    print("TARGETING " + letter_changer[0])
+# STUPID AND LOOPS!!!!!!!!! THESE ALL DO THE SAME THING!!! BUT I DON'T KNOW HOW TO MAKE letter_trans_# and path_# MALUABLE!!!!!!
 
-def path_a():
-    down(), down()
-def path_b():
-    down(), down(), down(), right(), right(), right(), right()
-def path_c():
-    down(), down(), down(), right(), right()
-def path_d():
-    down(), down(), right(), right()
-def path_e():
-    down(), right(), right()
-def path_f():
-    down(), down(), right(), right(), right()
-def path_g():
-    down(), down(), right(), right(), right(), right()
-def path_h():
-    down(), down(), right(), right(), right(), right(), right()
-def path_i():
-    down(), right(), right(), right(), right(), right(), right(), right()
-def path_j():
-    down(), down(), right(), right(), right(), right(), right(), right()
-def path_k():
-    down(), down(), right(), right(), right(), right(), right(), right(), right()
-def path_l():
-    down(), down(), right(), right(), right(), right(), right(), right(), right(), right()
-def path_m():
-    down(), down(), down(), right(), right(), right(), right(), right(), right()
-def path_n():
-    down(), down(), down(), right(), right(), right(), right(), right()
-def path_o():
-    down(), right(), right(), right(), right(), right(), right(), right(), right()
-def path_p():
-    down(), right(), right(), right(), right(), right(), right(), right(), right(), right()
-def path_q():
-    down()
-def path_r():
-    down(), right(), right(), right()
-def path_s():
-    down(), down(), right()
-def path_t():
-    down(), right(), right(), right(), right()
-def path_u():
-    down(), right(), right(), right(), right(), right(), right()
-def path_v():
-    down(), down(), down(), right(), right(), right()
-def path_w():
-    down(), right()
-def path_x():
-    down(), down(), down(), right()
-def path_y():
-    down(), right(), right(), right(), right(), right()
-def path_z():
-    down(), down(), down()
+def letter_trans_a():
+    for lister_func in path_a:
+        if lister_func == 1:
+            up()
+        elif lister_func == 2:
+            down()
+        elif lister_func == 3:
+            left()
+        elif lister_func == 4:
+            right()
+def letter_trans_b():
+    for lister_func in path_b:
+        if lister_func == 1:
+            up()
+        elif lister_func == 2:
+            down()
+        elif lister_func == 3:
+            left()
+        elif lister_func == 4:
+            right()
+def letter_trans_c():
+    for lister_func in path_c:
+        if lister_func == 1:
+            up()
+        elif lister_func == 2:
+            down()
+        elif lister_func == 3:
+            left()
+        elif lister_func == 4:
+            right()
+
+letter_changer = ["NULL"]
+def new_letter_printer():
+    print("TARGETING " + letter_changer[0])
