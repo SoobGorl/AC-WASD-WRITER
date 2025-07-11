@@ -1,7 +1,7 @@
 import time
 import pyautogui
 from letters import *
-key_delay = 0.2
+key_delay = 0.5
 # time between stick presses
 letter_delay = 0.5
 # time between letters
@@ -60,7 +60,19 @@ def letter_trans_c():
             left()
         elif lister_func == 4:
             right()
-
+def rank_reset():
+    [x - 1 for x in path_c]
+    print("! RESET !")
+    for lister_func in path_c:
+        if lister_func == 1:
+            up()
+        elif lister_func == 2:
+            down()
+        elif lister_func == 3:
+            left()
+        elif lister_func == 4:
+            right()
+    print("! RESET FINISHED !")
 letter_changer = ["NULL"]
 def new_letter_printer():
     print("TARGETING " + letter_changer[0])

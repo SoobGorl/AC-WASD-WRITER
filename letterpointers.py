@@ -14,7 +14,8 @@ def letter_c():
     letter_changer[0] = "C"
     new_letter_printer()
     letter_trans_c()
-    return select()
+    select()
+    return rank_reset()
 def letter_d():
     letter_changer[0] = "D"
     new_letter_printer()
