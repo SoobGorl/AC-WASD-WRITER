@@ -1,8 +1,6 @@
 path_y = [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 4, 4]
 
 
-
-# Iterate over each element in the list
 for lister_func in path_y:
     if lister_func == 1:
         print("move up")
@@ -13,7 +11,7 @@ for lister_func in path_y:
     elif lister_func == 4:
         print("move right")
     else:
-        print("I don't know where to go.")
+        print("????? INVALID NUMBER ?????")
 
 #cursor_move = 4
 #if cursor_move == 1:
