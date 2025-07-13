@@ -54,7 +54,7 @@ letter_trans(NULL or path_a or path_b or path_c or path_d or
            path_e or path_f or path_j or path_k or path_l or
            path_m or path_n or path_o or path_p or path_q or
            path_r or path_s or path_t or path_u or path_v or
-           path_w or path_x or path_y or path_z)
+           path_w or path_x or path_y or path_z or path_enter)
 
 def rank_reset(letters_call):
     print("! RESET !")
@@ -77,4 +77,4 @@ rank_reset(NULL or path_a or path_b or path_c or path_d or
            path_e or path_f or path_j or path_k or path_l or
            path_m or path_n or path_o or path_p or path_q or
            path_r or path_s or path_t or path_u or path_v or
-           path_w or path_x or path_y or path_z)
+           path_w or path_x or path_y or path_z or path_enter)

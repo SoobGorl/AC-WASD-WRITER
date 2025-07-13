@@ -165,6 +165,13 @@ def command_space():
     pydirectinput.press("f")
     time.sleep(letter_delay)
 
+def keycode_return():
+    letter_changer[0] = "RETURN"
+    new_letter_printer()
+    letter_trans(path_return)
+    select()
+    return rank_reset(path_return)
+
 def test_pattern():
     letter_b()
     letter_o()

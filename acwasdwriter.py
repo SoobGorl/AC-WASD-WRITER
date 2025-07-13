@@ -2,6 +2,10 @@ import time
 from letterpointers import *
 import sys
 
+# potential speed-up but making game speed faster for more inputs? script has to not be slow first though lol
+
+# 192 potential characters in letter, 32 per line
+
 def sleepy_time():
     time.sleep(8) # 8 second break, for alt tabbing
 def pause_break():
@@ -109,6 +113,8 @@ def input_transcriber():
             sys.exit(f"!!! INVALID KEY: {key_input} !!!")
 
 input_transcriber()
+
+# if word exceeds 32 character limit then on previous word run keycode_return()
 
 print("PROGRAM COMPLETE. WAITING 8 SECONDS BEFORE CLOSING.")
 sleepy_time()
