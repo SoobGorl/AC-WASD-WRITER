@@ -4,7 +4,7 @@ from letterpointers import *
 def sleepy_time():
     time.sleep(8) # 8 second break, for alt tabbing
 def pause_break():
-    time.sleep(2) # 2 second break, for short pauses
+    time.sleep(1) # 1 second break, for short pauses
 
 print("MAKE SURE YOU ARE IN QWERTY MODE, IN ALL LOWERCASE.")
 pause_break()
@@ -42,18 +42,28 @@ while True: # if no, run through things individually to see if it's better.
         print("Please type \"Y\" or \"N\".")
 
 text_input = input("Please input your desired text here: ")
-#text_list = list(text_input)
-#print(text_list)
+text_list = list(text_input)
+print(text_list)
+
+# THIS DOES NOT WORK BUT I WANT TO GO THROUGH EACH LIST THING ONE BY ONE AND REPLACE THEM ACCORDINGLY
+#def text_printer(text_input_call):
+    #for text_input_call in text_input:
+        #text_input_call
+#text_printer(letter_a(), letter_b(), letter_c(), letter_d(), letter_e(),
+             #letter_f(), letter_g(), letter_h(), letter_i(), letter_j(),
+             #letter_k(), letter_l(), letter_m(), letter_n(), letter_o(),
+             #letter_p(), letter_q(), letter_r(), letter_s(), letter_t(),
+             #letter_u(), letter_v(), letter_w(), letter_x(), letter_y(),
+             #letter_z, command_space())
 
 
-
-
-print("PROGRAM FINISHED. WAITING 3 SECONDS BEFORE CLOSING.")
+print("PROGRAM COMPLETE. WAITING 8 SECONDS BEFORE CLOSING.")
 sleepy_time()
 
-#letter_a(), letter_b(), letter_c(), letter_d(), letter_e(), letter_f(), letter_g(), letter_h(), letter_i()
-#letter_j(), letter_k(), letter_l(), letter_m(), letter_n(), letter_o(), letter_p(), letter_q(), letter_r(),
-#letter_s(), letter_t(), letter_u(), letter_v(), letter_w(), letter_x(), letter_y(), letter_z()
+# TEST STRINGS
+# letter_a(), letter_b(), letter_c(), letter_d(), letter_e(), letter_f(), letter_g(), letter_h(), letter_i()
+# letter_j(), letter_k(), letter_l(), letter_m(), letter_n(), letter_o(), letter_p(), letter_q(), letter_r(),
+# letter_s(), letter_t(), letter_u(), letter_v(), letter_w(), letter_x(), letter_y(), letter_z()
 
 # SETTINGS HAVE BEEN CHANGED. TRY AGAIN IN 5 SECONDS (this will make it so that key_delay = 1 instead of 0)
 # yes (sets key_day to 1) no (sets key_delay to 0)

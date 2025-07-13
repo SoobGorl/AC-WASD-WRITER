@@ -166,6 +166,6 @@ def test_pattern():
     letter_n()
     letter_g()
     #keycode_exclaim()
-    #keycode_space()
+    #command_space()
     #keycode_hashtag()
     #number_one()

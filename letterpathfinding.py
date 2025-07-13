@@ -8,6 +8,7 @@ key_delay = 0
 letter_delay = 0
 # time between letters
 
+# WASD DIRECTIONS
 def up():
     time.sleep(key_delay)
     pydirectinput.press("w")
@@ -28,6 +29,13 @@ def select():
     time.sleep(key_delay)
     pydirectinput.press("e")
     print("SELECTING " + letter_changer[0] + " (A PRESS)")
+    time.sleep(letter_delay)
+
+# KEY COMMANDS
+def command_space():
+    time.sleep(key_delay)
+    pydirectinput.press("f")
+    print("PRESSING " + letter_changer[0] + " (LEFT TRIGGER)")
     time.sleep(letter_delay)
 
 letter_changer = ["NULL"]
