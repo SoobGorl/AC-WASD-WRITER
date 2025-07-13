@@ -3,7 +3,7 @@ from letterpointers import *
 import sys
 
 def sleepy_time():
-    time.sleep(1) # 8 second break, for alt tabbing
+    time.sleep(8) # 8 second break, for alt tabbing
 def pause_break():
     time.sleep(0) # (whatever) second break, for short pauses. maybe 1.
 
