@@ -41,26 +41,19 @@ while True: # if no, run through things individually to see if it's better.
     else:
         print("Please type \"Y\" or \"N\".")
 
-text_input = input("Please input your text here: ")
+text_input = input("Please input your desired text here: ")
+#text_list = list(text_input)
+#print(text_list)
 
 
 
 
-
+print("PROGRAM FINISHED. WAITING 3 SECONDS BEFORE CLOSING.")
+sleepy_time()
 
 #letter_a(), letter_b(), letter_c(), letter_d(), letter_e(), letter_f(), letter_g(), letter_h(), letter_i()
 #letter_j(), letter_k(), letter_l(), letter_m(), letter_n(), letter_o(), letter_p(), letter_q(), letter_r(),
 #letter_s(), letter_t(), letter_u(), letter_v(), letter_w(), letter_x(), letter_y(), letter_z()
-
-
-
-
-
-#text_list = list(text_input)
-#print(text_list)
-
-#print("PROGRAM FINISHED. WAITING 3 SECONDS.")
-#sleepy_time()
 
 # SETTINGS HAVE BEEN CHANGED. TRY AGAIN IN 5 SECONDS (this will make it so that key_delay = 1 instead of 0)
 # yes (sets key_day to 1) no (sets key_delay to 0)
