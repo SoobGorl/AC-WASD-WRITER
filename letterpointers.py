@@ -156,3 +156,16 @@ def letter_z():
     letter_trans(path_z)
     select()
     return rank_reset(path_z)
+
+def test_pattern():
+    letter_b()
+    letter_o()
+    letter_w()
+    letter_l()
+    letter_i()
+    letter_n()
+    letter_g()
+    #keycode_exclaim()
+    #keycode_space()
+    #keycode_hashtag()
+    #number_one()

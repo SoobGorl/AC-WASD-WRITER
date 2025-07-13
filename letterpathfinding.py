@@ -35,6 +35,8 @@ letter_changer = ["NULL"]
 def new_letter_printer():
     print("TARGETING " + letter_changer[0])
 
+NULL = [0] # this is here because without it, running the script tries to ouput path_a immediately before anything else.
+
 def letter_trans(letters_call):
     for lister_func in letters_call:
         if lister_func == 1:
@@ -45,8 +47,6 @@ def letter_trans(letters_call):
             left()
         elif lister_func == 4:
             right()
-
-NULL = [0] # this is here because without it, running the script tries to ouput path_a immediately before anything else.
 
 letter_trans(NULL or path_a or path_b or path_c or path_d or
            path_e or path_f or path_j or path_k or path_l or
