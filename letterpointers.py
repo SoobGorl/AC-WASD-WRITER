@@ -157,6 +157,14 @@ def letter_z():
     select()
     return rank_reset(path_z)
 
+# KEY COMMANDS
+def command_space():
+    time.sleep(key_delay)
+    letter_changer[0] = "F"
+    print("SELECTING " + letter_changer[0] + " (SPACE / LEFT TRIGGER)")
+    pydirectinput.press("f")
+    time.sleep(letter_delay)
+
 def test_pattern():
     letter_b()
     letter_o()

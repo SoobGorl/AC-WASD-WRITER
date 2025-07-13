@@ -11,31 +11,25 @@ letter_delay = 0
 # WASD DIRECTIONS
 def up():
     time.sleep(key_delay)
-    pydirectinput.press("w")
     print("W PRESS (1 / UP)")
+    pydirectinput.press("w")
 def left():
     time.sleep(key_delay)
-    pydirectinput.press("a")
     print("A PRESS (3 / LEFT)")
+    pydirectinput.press("a")
 def down():
     time.sleep(key_delay)
-    pydirectinput.press("s")
     print("S PRESS (2 / DOWN)")
+    pydirectinput.press("s")
 def right():
     time.sleep(key_delay)
-    pydirectinput.press("d")
     print("D PRESS (4 / RIGHT)")
+    pydirectinput.press("d")
 def select():
     time.sleep(key_delay)
-    pydirectinput.press("e")
+    letter_changer[0] = "E"
     print("SELECTING " + letter_changer[0] + " (A PRESS)")
-    time.sleep(letter_delay)
-
-# KEY COMMANDS
-def command_space():
-    time.sleep(key_delay)
-    pydirectinput.press("f")
-    print("PRESSING " + letter_changer[0] + " (LEFT TRIGGER)")
+    pydirectinput.press("e")
     time.sleep(letter_delay)
 
 letter_changer = ["NULL"]

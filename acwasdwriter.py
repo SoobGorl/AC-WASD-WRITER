@@ -1,10 +1,11 @@
 import time
 from letterpointers import *
+import sys
 
 def sleepy_time():
-    time.sleep(8) # 8 second break, for alt tabbing
+    time.sleep(1) # 8 second break, for alt tabbing
 def pause_break():
-    time.sleep(1) # 1 second break, for short pauses
+    time.sleep(0) # (whatever) second break, for short pauses. maybe 1.
 
 print("MAKE SURE YOU ARE IN QWERTY MODE, IN ALL LOWERCASE.")
 pause_break()
@@ -45,17 +46,69 @@ text_input = input("Please input your desired text here: ")
 text_list = list(text_input)
 print(text_list)
 
-# THIS DOES NOT WORK BUT I WANT TO GO THROUGH EACH LIST THING ONE BY ONE AND REPLACE THEM ACCORDINGLY
-#def text_printer(text_input_call):
-    #for text_input_call in text_input:
-        #text_input_call
-#text_printer(letter_a(), letter_b(), letter_c(), letter_d(), letter_e(),
-             #letter_f(), letter_g(), letter_h(), letter_i(), letter_j(),
-             #letter_k(), letter_l(), letter_m(), letter_n(), letter_o(),
-             #letter_p(), letter_q(), letter_r(), letter_s(), letter_t(),
-             #letter_u(), letter_v(), letter_w(), letter_x(), letter_y(),
-             #letter_z, command_space())
+print("SWITCH TABS NOW! WAITING 8 SECONDS BEFORE INPUTTING KEYPRESSES!")
+sleepy_time()
 
+def input_transcriber():
+    for key_input in text_list:
+        if key_input == "a":
+            letter_a()
+        elif key_input == "b":
+            letter_b()
+        elif key_input == "c":
+            letter_c()
+        elif key_input == "d":
+            letter_d()
+        elif key_input == "e":
+            letter_e()
+        elif key_input == "f":
+            letter_f()
+        elif key_input == "g":
+            letter_g()
+        elif key_input == "h":
+            letter_h()
+        elif key_input == "i":
+            letter_i()
+        elif key_input == "j":
+            letter_j()
+        elif key_input == "k":
+            letter_k()
+        elif key_input == "l":
+            letter_l()
+        elif key_input == "m":
+            letter_m()
+        elif key_input == "n":
+            letter_n()
+        elif key_input == "o":
+            letter_o()
+        elif key_input == "p":
+            letter_p()
+        elif key_input == "q":
+            letter_q()
+        elif key_input == "r":
+            letter_r()
+        elif key_input == "s":
+            letter_s()
+        elif key_input == "t":
+            letter_t()
+        elif key_input == "u":
+            letter_u()
+        elif key_input == "v":
+            letter_v()
+        elif key_input == "w":
+            letter_w()
+        elif key_input == "x":
+            letter_x()
+        elif key_input == "y":
+            letter_y()
+        elif key_input == "z":
+            letter_z()
+        elif key_input == " ":
+            command_space()
+        else:
+            sys.exit(f"!!! INVALID KEY: {key_input} !!!")
+
+input_transcriber()
 
 print("PROGRAM COMPLETE. WAITING 8 SECONDS BEFORE CLOSING.")
 sleepy_time()
@@ -64,9 +117,6 @@ sleepy_time()
 # letter_a(), letter_b(), letter_c(), letter_d(), letter_e(), letter_f(), letter_g(), letter_h(), letter_i()
 # letter_j(), letter_k(), letter_l(), letter_m(), letter_n(), letter_o(), letter_p(), letter_q(), letter_r(),
 # letter_s(), letter_t(), letter_u(), letter_v(), letter_w(), letter_x(), letter_y(), letter_z()
-
-# SETTINGS HAVE BEEN CHANGED. TRY AGAIN IN 5 SECONDS (this will make it so that key_delay = 1 instead of 0)
-# yes (sets key_day to 1) no (sets key_delay to 0)
 
 # USE ONLY WHEN DOLPHIN CONTROLLER INPUT IS SET TO "STANDARD CONTROLLER" AND KEYBOARD STICK PRESSES ARE SET TO
 # "WASD" (E IS SELECT, Q IS SPACE, R IS CYCLE THROUGH SYMBOLS AND STUFF)
