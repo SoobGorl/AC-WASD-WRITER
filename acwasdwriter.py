@@ -19,10 +19,14 @@ time.sleep(3)
 #letter_j(), letter_k(), letter_l(), letter_m(), letter_n(), letter_o(), letter_p(), letter_q(), letter_r(),
 #letter_s(), letter_t(), letter_u(), letter_v(), letter_w(), letter_x(), letter_y(), letter_z()
 
-letter_b(), letter_o(), letter_w(), letter_l(), letter_i(), letter_n(), letter_g()
+#letter_b(), letter_o(), letter_w(), letter_l(), letter_i(), letter_n(), letter_g()
 
-
+letter_a(), letter_b(), letter_c(), letter_d(), letter_e()
 text_input = input("")
+
+text_list = list(text_input)
+
+print(text_list)
 
 #print("PROGRAM FINISHED. WAITING 3 SECONDS.")
 #time.sleep(3)
