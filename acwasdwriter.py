@@ -7,7 +7,7 @@ import sys
 # 192 potential characters in letter, 32 per line
 
 def sleepy_time():
-    time.sleep(8) # 8 second break, for alt tabbing
+    time.sleep(3) # 8 second break, for alt tabbing
 def pause_break():
     time.sleep(0) # (whatever) second break, for short pauses. maybe 1.
 
