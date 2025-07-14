@@ -7,9 +7,14 @@ import sys
 # 192 potential characters in letter, 32 per line
 
 def sleepy_time():
-    time.sleep(3) # 8 second break, for alt tabbing
+    time.sleep(8) # 8 second break, for alt tabbing
 def pause_break():
     time.sleep(0) # (whatever) second break, for short pauses. maybe 1.
+
+# TODO! hold down tab when keycodes start executing, release tab when string over
+
+# TODO! add 3 speed options in the beginning:
+# TODO! 0.035 for normal speed (30fps) 0.17 for 2x speed (60 fps, milage varies), and 0.05 for slow mode (bad pc :cc)
 
 print("MAKE SURE YOU ARE IN QWERTY MODE, IN ALL LOWERCASE.")
 pause_break()
