@@ -1,5 +1,5 @@
 ### BINDING REQUIREMENTS
-<img width="865" height="455" alt="requirements" src="https://github.com/user-attachments/assets/53bfd124-74d2-4faa-8ece-fa80215ddfe9" />
+<img width="865" height="455" alt="image" src="https://github.com/user-attachments/assets/2d7a06f9-2b9a-4a80-85a0-57d5588e4d8d" />
 
 ### BUILDING REQUIREMENTS
 - **PyAutoGui** (keyboard transcriber)
