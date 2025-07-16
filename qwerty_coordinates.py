@@ -1,1 +1,0 @@
-qwert_exclaim = (0 , 0)

@@ -1,5 +1,14 @@
-from letterpathfinding import *
+from key_pathfinding_math import *
 
+# KEY COMMANDS
+def command_space():
+    time.sleep(key_delay)
+    letter_changer[0] = "F"
+    print("SELECTING " + letter_changer[0] + " (SPACE / LEFT TRIGGER)")
+    pydirectinput.press("f")
+    time.sleep(letter_delay)
+
+# LETTERS
 def letter_a():
     letter_changer[0] = "A"
     new_letter_printer()
@@ -157,14 +166,7 @@ def letter_z():
     select()
     return rank_reset(path_z)
 
-# KEY COMMANDS
-def command_space():
-    time.sleep(key_delay)
-    letter_changer[0] = "F"
-    print("SELECTING " + letter_changer[0] + " (SPACE / LEFT TRIGGER)")
-    pydirectinput.press("f")
-    time.sleep(letter_delay)
-
+# KEY CODES
 def keycode_return():
     letter_changer[0] = "RETURN"
     new_letter_printer()
@@ -172,15 +174,98 @@ def keycode_return():
     select()
     return rank_reset(path_return)
 
-def test_pattern():
-    letter_b()
-    letter_o()
-    letter_w()
-    letter_l()
-    letter_i()
-    letter_n()
-    letter_g()
-    #keycode_exclaim()
-    #command_space()
-    #keycode_hashtag()
-    #number_one()
+# NUMBERS
+def number_one():
+    letter_changer[0] = "1"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_one)
+    select()
+    rank_reset(path_one)
+    return caps_toggle()
+def number_two():
+    letter_changer[0] = "2"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_two)
+    select()
+    rank_reset(path_two)
+    return caps_toggle()
+def number_three():
+    letter_changer[0] = "3"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_three)
+    select()
+    rank_reset(path_three)
+    return caps_toggle()
+def number_four():
+    letter_changer[0] = "4"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_four)
+    select()
+    rank_reset(path_four)
+    return caps_toggle()
+def number_five():
+    letter_changer[0] = "5"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_five)
+    select()
+    rank_reset(path_five)
+    return caps_toggle()
+def number_six():
+    letter_changer[0] = "6"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_six)
+    select()
+    rank_reset(path_six)
+    return caps_toggle()
+def number_seven():
+    letter_changer[0] = "7"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_seven)
+    select()
+    rank_reset(path_seven)
+    return caps_toggle()
+def number_eight():
+    letter_changer[0] = "8"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_eight)
+    select()
+    rank_reset(path_eight)
+    return caps_toggle()
+def number_nine():
+    letter_changer[0] = "9"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_nine)
+    select()
+    rank_reset(path_nine)
+    return caps_toggle()
+def number_zero():
+    letter_changer[0] = "0"
+    new_letter_printer()
+    caps_toggle()
+    letter_trans(path_zero)
+    select()
+    rank_reset(path_zero)
+    return caps_toggle()
+
+# FAILED CAPITAL TOGGLER
+#def caps_toggle():
+    #pydirectinput.press("g")
+#caps = True
+#if caps:
+    #caps_toggle()
+    #print("!!! CAPS TOGGLE !!!")
+    #select()
+    #caps_toggle()
+    # set caps to false?
+#else:
+    #select()
+    #print("### NO CAPS ###")

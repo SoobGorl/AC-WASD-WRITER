@@ -1,13 +1,17 @@
 import time
-import pyautogui
 import pydirectinput
-pydirectinput.PAUSE = 0.035
-from letters import *
+from key_paths import *
+
+debug = False
 
 key_delay = 0
 # time between stick presses
 letter_delay = 0
 # time between letters
+
+def caps_toggle(): # toggles caps (not on or off, just an input)
+    pydirectinput.press("g")
+    print("!!! TOGGLING CAPS !!!")
 
 # WASD DIRECTIONS
 def up():
