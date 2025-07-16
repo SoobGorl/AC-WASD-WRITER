@@ -10,7 +10,12 @@ import sys
 # TODO!!!! like caps = true, make it caps, select value, then make it not caps and then set it to false
 # TODO! add debug mode (shows "W PRESS" and everything else. non-debug only shows "pressing A" when targeting)
 
-version_number = "1.1.4"
+# TODO DEBUG
+# shows text string + wasd presses
+# TODO CAPS
+
+version_number = "1.1.3"
+devnumber = "1.1.3#5"
 
 def sleepy_time():
     time.sleep(8) # 8 second break, for alt tabbing
@@ -26,8 +31,11 @@ def speed_fast():
 
 tab_presser = False
 
-print("ACWASD VERSION " + version_number)
-print("MAKE SURE YOU ARE IN QWERTY MODE, IN ALL LOWERCASE, AND CURSOR IS ON THE \"!\" KEY.")
+print("ACWASD VERSION " + version_number + "\n")
+print("MAKE SURE YOU ARE IN QWERTY MODE, IN ALL LOWERCASE, AND CURSOR IS ON THE \"!\" KEY.\n")
+print("VALID KEYCODES: ! ? \" ' ; : , . - ~")
+print("NUMBERS ARE ALLOWED! :)")
+print("CAPITALIZATION IS >NOT< ALLOWED... :(\n")
 pause_break()
 
 while True:
@@ -140,13 +148,39 @@ def input_transcriber():
             number_nine()
         elif key_input == "0":
             number_zero()
+        elif key_input == "!":
+            keycode_exclamationmark()
+        elif key_input == "?":
+            keycode_questionmark()
+        elif key_input == '"':
+            keycode_quotationmark()
+        elif key_input == "-":
+            keycode_dash()
+        elif key_input == "~":
+            keycode_tilde()
+        #elif key_input == "&DASH":
+            #keycode_doubledash()
+        elif key_input == "'":
+            keycode_apostrophe()
+        elif key_input == ";":
+            keycode_semicolon()
+        elif key_input == ":":
+            keycode_colon()
+        #elif key_input == "&KEY":
+            #keycode_key()
+        #elif key_input == "&RETURN":
+            #keycode_return()
+        elif key_input == ",":
+            keycode_comma()
+        elif key_input == ".":
+            keycode_period()
         else:
             print("If you're seeing this, a failsafe failed. Oops!")
+            print("You probably inputted an invalid keycode.")
+            print("Please use ONLY LOWERCASE letters and BASIC punctuation.")
             print("Program will close in 8 seconds.")
             sleepy_time()
             sys.exit("PROGRAM CLOSED DUE TO AN UNKNOWN ERROR.")
-
-# valid key error goes here
 
 print("SWITCH TABS NOW! WAITING 8 SECONDS BEFORE INPUTTING KEYPRESSES!")
 sleepy_time()
@@ -167,8 +201,7 @@ print("PROGRAM COMPLETE. WAITING 8 SECONDS BEFORE CLOSING.")
 sleepy_time()
 sys.exit("PROGRAM TERMINATED.")
 
-
-# KEY ERROR REPORTING! WILL REPORT KEYS NOT IN TEXT INPUT, BUT WILL ALSO NULLIFY ALL TEXT! "abc" for instance errors out
+# i was going to implement this but nah, waiting until v2
 valid_keys = ["a", "b", "c", "d", "e", "f", "g", "h", "i",
               "j", "k", "l", "m", "n", "o", "p", "q", "r",
               "s", "t", "u", "v", "w", "x", "y", "z", " ",

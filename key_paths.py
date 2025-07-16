@@ -28,7 +28,7 @@ path_z = [2, 2, 2]
 
 # number paths
 # REQUIRES CAPS TO BE TOGGLED ON!
-path_one = [] # select instantly, as it's on the starting position (special number_one function?)
+# path_one = [] # select instantly, as it's on the starting position (special number_one function?)
 path_two = [4]
 path_three = [4, 4]
 path_four = [4, 4, 4]
@@ -40,7 +40,7 @@ path_nine = [4, 4, 4, 4, 4, 4, 4, 4]
 path_zero = [4, 4, 4, 4, 4, 4, 4, 4, 4]
 
 # additional paths
-path_exclaim = [] # select instantly, as it's on the starting position (special keycode_exclaim function?)
+# path_exclaim = [] # select instantly, as it's on the starting position (special keycode_exclaim function?)
 path_question = [4]
 path_quote = [4, 4]
 path_dash = [4, 4, 4]

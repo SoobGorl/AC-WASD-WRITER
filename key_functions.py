@@ -173,15 +173,89 @@ def keycode_return():
     letter_trans(path_return)
     select()
     return rank_reset(path_return)
+def keycode_exclamationmark():
+    letter_changer[0] = "!"
+    new_letter_printer()
+    return select()
+def keycode_questionmark():
+    letter_changer[0] = "?"
+    new_letter_printer()
+    letter_trans(path_question)
+    select()
+    return rank_reset(path_question)
+def keycode_quotationmark():
+    letter_changer[0] = "\""
+    new_letter_printer()
+    letter_trans(path_quote)
+    select()
+    return rank_reset(path_quote)
+def keycode_dash():
+    letter_changer[0] = "-"
+    new_letter_printer()
+    letter_trans(path_dash)
+    select()
+    return rank_reset(path_dash)
+def keycode_tilde():
+    letter_changer[0] = "~"
+    new_letter_printer()
+    letter_trans(path_tilde)
+    select()
+    return rank_reset(path_tilde)
+def keycode_doubledash():
+    letter_changer[0] = "--"
+    new_letter_printer()
+    letter_trans(path_dash_long)
+    select()
+    return rank_reset(path_dash_long)
+def keycode_apostrophe():
+    letter_changer[0] = "'"
+    new_letter_printer()
+    letter_trans(path_apostrophe)
+    select()
+    return rank_reset(path_apostrophe)
+def keycode_semicolon():
+    letter_changer[0] = ";"
+    new_letter_printer()
+    letter_trans(path_semicolon)
+    select()
+    return rank_reset(path_semicolon)
+def keycode_colon():
+    letter_changer[0] = ":"
+    new_letter_printer()
+    letter_trans(path_colon)
+    select()
+    return rank_reset(path_colon)
+def keycode_key():
+    letter_changer[0] = "KEY"
+    new_letter_printer()
+    letter_trans(path_key)
+    select()
+    return rank_reset(path_key)
+def keycode_return():
+    letter_changer[0] = "RETURN"
+    new_letter_printer()
+    letter_trans(path_return)
+    select()
+    return rank_reset(path_return)
+def keycode_comma():
+    letter_changer[0] = ","
+    new_letter_printer()
+    letter_trans(path_comma)
+    select()
+    return rank_reset(path_comma)
+def keycode_period():
+    letter_changer[0] = ","
+    new_letter_printer()
+    letter_trans(path_period)
+    select()
+    return rank_reset(path_period)
 
 # NUMBERS
 def number_one():
     letter_changer[0] = "1"
     new_letter_printer()
     caps_toggle()
-    letter_trans(path_one)
     select()
-    rank_reset(path_one)
     return caps_toggle()
 def number_two():
     letter_changer[0] = "2"
