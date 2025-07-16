@@ -14,8 +14,8 @@ import sys
 # shows text string + wasd presses
 # TODO CAPS
 
-version_number = "1.1.3"
-devnumber = "1.1.3#5"
+version_number = "1.1.2"
+devnumber = "1.1.2#5"
 
 def sleepy_time():
     time.sleep(8) # 8 second break, for alt tabbing
